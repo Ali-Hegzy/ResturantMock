@@ -1,0 +1,1 @@
+when my screen is 200% the info does not become in column (from 761px to 575px in width)

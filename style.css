@@ -1,0 +1,95 @@
+.logo img{
+    width: 4rem;
+}
+.sections-links .link{
+    position: relative;
+    z-index: 1;
+}
+.sections-links .link::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #e37e17;
+    z-index: -1;
+    transition-duration: 0.5s;
+}
+.sections-links .link:hover::after{
+    width: 100%;
+}
+.sections-links .link:hover a{
+    color: white !important;
+}
+footer .contact-links .link:nth-child(1)  a:hover{
+    color: #1877F2	 !important;
+}
+footer .contact-links .link:nth-child(2)  a:hover{
+    color: #0077B5	 !important;
+}
+footer .contact-links .link:nth-child(3)  a:hover{
+    color: #E1306C	 !important;
+}
+@media screen and (max-width:576px) {
+    header .sections-links{
+        flex-direction: column;
+    }
+
+    footer .img {
+        padding-bottom: 3rem ;
+    }
+    footer .info{
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+        .location{
+            align-items: center;
+        }
+    }
+}
+
+/* === */
+
+body{
+    background-image: url("img/bg.png");
+}
+
+.land {
+    min-height: 100vh;
+
+    background-color: #f1d09c;
+    box-shadow: 0 5px 10px #f1d09c,
+                0 10px 10px #f1d09ce0,
+                0 15px 10px #f1d09c81,
+                0 20px 10px #f1d09cb9;
+
+    .img{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    
+    .text{
+        width: 50%;
+    }
+}
+
+.foodSection {
+    .img{
+        width: 40%;
+    }
+    .text {
+        width: 50%;
+        background-color: #243137;
+        border: 3px solid #bd9f67;
+    }
+    button{
+        background-color: #bd9f67;
+    }
+    button:hover{
+        background-color: #966305;
+        color: white;
+    }
+}
